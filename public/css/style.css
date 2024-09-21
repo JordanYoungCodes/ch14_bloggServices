@@ -1,0 +1,53 @@
+header, .project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #1b89bc;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  color: #065b83;
+  text-decoration: underline;
+}
+
+.dollar-amount {
+  color: #056605;
+  font-weight: bold;
+  margin-left: -5px;
+}
+
+.tophead {
+  background-color: #8c917c;
+  border-bottom: 3px solid black;
+}
+
+.btitle {
+  color:rgb(4, 4, 163);
+}
+
+.timestamp {
+  color:#4e4e4e7e
+}
+
+.post {
+  font-weight: bold;
+}
+
+.outline {
+  border: solid;
+  border-color:#13e913;
+  border-radius: 18px;
+  border-width: 3px;
+  box-shadow: 4 4;
+}
+
+.lmargin {
+  padding-left: 10px;
+}
