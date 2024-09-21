@@ -52,7 +52,8 @@ router.get('/blog/:id', async (req, res) => {
 
 router.get('/comment/:blog_id', async (req, res) => {
   try {
-    const commentData = await Comment.findAll(req.params.blog_id, {
+    const commentData = await Comment.findAll({
+      where: {blog_id: req.params.blog_id},
       include: [
         {
           model: Blog,
@@ -61,7 +62,7 @@ router.get('/comment/:blog_id', async (req, res) => {
       ],
     });
 
-    const comment = commentData.get({ plain: true });
+    const comment = commentData.map((comment) => comment.get({ plain: true }));
 
     res.render('blog', {
       ...comment,
