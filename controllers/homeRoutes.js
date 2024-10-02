@@ -35,11 +35,15 @@ router.get('/blog/:id', async (req, res) => {
           model: User,
           attributes: ['name'],
         },
+        {
+          model:Comment,
+        },
+        
       ],
     });
 
     const blog = blogData.get({ plain: true });
-
+console.log(blog)
     res.render('blog', {
       ...blog,
       logged_in: req.session.logged_in
@@ -50,28 +54,7 @@ router.get('/blog/:id', async (req, res) => {
 });
 
 
-router.get('/comment/:blog_id', async (req, res) => {
-  try {
-    const commentData = await Comment.findAll({
-      where: {blog_id: req.params.blog_id},
-      include: [
-        {
-          model: Blog,
-          attributes: ['title'],
-        },
-      ],
-    });
 
-    const comment = commentData.map((comment) => comment.get({ plain: true }));
-
-    res.render('blog', {
-      ...comment,
-      logged_in: req.session.logged_in
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
 
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {

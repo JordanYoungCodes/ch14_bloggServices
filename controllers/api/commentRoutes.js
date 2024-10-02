@@ -6,7 +6,6 @@ router.post('/', withAuth, async (req, res) => {
     try {
       const newComment = await Comment.create({
         ...req.body,
-        blog_id: req.session.blog_id,
       });
   
       res.status(200).json(newComment);
@@ -20,7 +19,7 @@ router.post('/', withAuth, async (req, res) => {
       const commentData = await Comment.destroy({
         where: {
           id: req.params.id,
-          blog_id: req.session.blog_id,
+          // blog_id: req.params.blog_id,
         },
       });
   
