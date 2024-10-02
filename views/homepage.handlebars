@@ -3,8 +3,11 @@
 <div class="row mb-4">
   <div class="col-md-5">
     <h2>
-    
-      <a class="btitle" href="/blog/{{blog.id}}">{{blog.title}}</a>
+      {{#if logged_in}}
+        <a class="btitle" href="/blog/{{blog.id}}">{{blog.title}}</a>
+      {{else}}
+        <a class="btitle" href="/login">{{blog.title}}</a>
+      {{/if}}
     </h2>
     <p></p>
     <p class="timestamp">Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
