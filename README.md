@@ -1,6 +1,6 @@
 
-# Generated README          <div align="right"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</div>
-
+# Twisted Tech Blog          <div align="right"> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)</div>
+- A Twisted Repo Productions
 
 ## Description
 - The reason for this application is to create a space to post thoughts in a blog style format. 
