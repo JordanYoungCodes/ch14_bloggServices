@@ -39,7 +39,7 @@
 # Contact and Contribution Resources
 - Email: jordansyoung@gmail.com
 - GitHub: https://github.com/JordanYoungCodes/ch14_bloggServices
-- Web Address: https://jordanyoungcodes.github.io/ch14_bloggServices/
+- Web Address: https://ch14-bloggservices.onrender.com/
 
 # Questions
 - For any questions or issues, use Github: JordanYoungCodes
