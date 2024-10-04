@@ -16,12 +16,13 @@
 [License](#License)
 
 ## Installation
-- To install the application, run the application from the terminal. 
+- To install the application and run the application from the terminal. 
 - Install models and such by typing npm i. 
 - Finaly type npm start and navigate to localhost:3001/.
+- Also the application is deployed to render, the URL is later in the README.
 
 ## Usage
-- To use this application, navigate to the site and you must sign up or log in.
+- To use this application, navigate to the render site and you must sign up or log in.
 - Then you can view posts, comment on posts, and delete both.
 
 ## Credits
@@ -34,7 +35,8 @@
 - Badges earned: none
 
 ## Features
-- the features of this application are: none
+- Unfortunately, time ran short for this assignment, the instructions want an update functionality.
+- I was unable to add the update at this point and will add it in the future.
 
 # Contact and Contribution Resources
 - Email: jordansyoung@gmail.com
